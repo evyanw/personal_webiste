@@ -94,6 +94,28 @@
                     </p>
 
                 <h2>Prinsip Kerja NTP</h2>
+                    <p>
+                        NTP menggunakan sistem hirarki dalam bekerja dan melakukan sinkronisasinya. Sistem hirarki ini menggunakan istilah Clock stratum atau strata 
+                        untuk menggambarkan tingkatan-tingkatannya.
+                        <ul>
+                            <li>Stratum 0, penghitung waktu eksternal seperti misalnya GPS clock, atomic clock atau radio clock yang sangat akurat.</li>
+                            <li>Startum 1, clock strata tingkat pertama merupakan perangkat komputer yang melakukan sinkronisasi dengan stratum 0.</li>
+                            <li>Stratum 2, clock strata tingkat kedua merupakan perangkat yang dikirimi perhitungan waktu oleh stratum 1 secara langsung dengan menggunakan protokol NTP.</li>
+                            <li>Stratum 3, clock strata tingkat ketiga merupakan perangkat yang dikirimi perhitungan waktu oleh stratum 2 secara langsung dengan menggunakan protokol NTP.</li>
+                            <li>Stratum 4, clock strata tingkat ketiga merupakan perangkat yang dikirimi perhitungan waktu oleh stratum 3 secara langsung dengan menggunakan protokol NTP.</li>
+                            <li>Begitu seterusnya sistem hirarki berjalan. Hanya Stratum 0 15 yang dianggap valid, stratum 16 digunakan untuk menunjukkan bahwa peralatan/mesin dimaksud tidak tersinkronisasi waktunya.</li>
+                        </ul>
+                    </p>
+
+                <h2>Contoh penggunaan</h2>
+                    <ol>
+                        <li>ATC (Air Traffic Control) menjadi salah satu yang pertama dalam aplikasi NTP.</li>
+                        <li>Perhitungan durasi pulsa pada telekomunikasi</li> 
+                    </ol>
+                <h2>kelebihan dan kekurangan</h2>
+                <h2>Cara Pakai NTO</h2>
+                <h2>Installasi dan Konfigurasi NTP Server</h2>
+                <h2>Kesimpulan</h2>
                 <!-- Tambahkan bagian jenis NTP, cara kerja, prinsip kerja, contoh penggunaan, kesimpulan, kelebihan dan kekurangan -->
             </div>
         </div>
